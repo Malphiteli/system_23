@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.equipment.dao.EquipmentInfoMapper">
+
+    <select id="noSubregionList" resultType="com.example.equipment.entity.EquipmentInfoEntity">
+        select * from equipment_info ei where  ei.subregion_name ='' and ei.status !=3
+    </select>
+
+</mapper>
